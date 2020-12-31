@@ -1,5 +1,5 @@
 
-.# !/usr/bin/python
+# !/usr/bin/python
 # -*- coding: utf-8 -*-
 """
 @File    :   py最长的公共前缀8.py
@@ -22,7 +22,8 @@ class Solution:
         for i in  zip(*strs):
             if len(set(i))==1:
                 res+=i[0]
-        
+            else:
+            	break
         return res
 
 

@@ -11,9 +11,9 @@ class Solution(object):
             num = num//3    
         while num%2 == 0:
             num = num//2
-
         return num==1
 '''
+
 
 class Solution(object):
     def isUgly(self, num):

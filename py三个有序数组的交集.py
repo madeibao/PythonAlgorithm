@@ -7,7 +7,7 @@ class Solution(object):
         :type arr3: List[int]
         :rtype: List[int]
         """
-        val = [0] * 2001
+        val = [0] * 30
         for i in arr1:
             val[i] += 1
         for i in arr2:

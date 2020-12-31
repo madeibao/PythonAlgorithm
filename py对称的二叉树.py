@@ -19,6 +19,8 @@ class Solution(object):
             return left.val ==right.val and helper(left.left,right.right) and helper(left.right,right.left)
         return helper(root, root)
 
+
+
 if __name__ == "__main__":
     s = Solution()
     n2 = TreeNode(2)
