@@ -1,22 +1,21 @@
 
+from typing import List
 
 
+class Solution:
+    def longestCommonPrefix(self, strs: List[str]) -> str:
 
-# 求一个字符串列表的最长的公共的前缀的值。
-
-
-class Solution():
-    def mostCommon(self,strs):
         res = ""
-
-        for i in zip(*strs):
+        for i in  zip(*strs):
             if len(set(i))==1:
-                res += i[0]
-    
+                res+=i[0]
+            else:
+            	break
         return res
-if __name__ == "__main__":
-    s = Solution()
-    list2 = ["flower","fly","flow"]
-    print(s.mostCommon(list2))
 
+
+if __name__ == "__main__":
+    s =Solution()
+    list2 = ["flower","flow","flight"]
+    print(s.longestCommonPrefix(list2))
 
