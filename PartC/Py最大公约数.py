@@ -19,7 +19,6 @@ def getMaxcommpisor(a, b):
 
 # 方法三
 
-
 def gcd(p, q):
     if q == 0:
         return p
