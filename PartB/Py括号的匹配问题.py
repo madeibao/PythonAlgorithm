@@ -1,5 +1,6 @@
 
 
+
 class Solution(object):
 	def legalBracket(self, strs):
 		dic2  = {"(":")","[": "]", "{":"}",}

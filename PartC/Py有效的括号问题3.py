@@ -1,6 +1,4 @@
 
-
-
 class Solution(object):
 	def validBracket(self,strs):
 

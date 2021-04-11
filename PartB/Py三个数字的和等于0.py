@@ -25,9 +25,10 @@
 #                 dif = 0 - num - j
 
 #                 if dif > j and dif in nums_hash:
-#                     result.append([num, j, dif])
-                    
+#                     result.append([num, j, dif])                
 #         return result
+
+
 class Solution:
     def threeSum(self, nums):
         """

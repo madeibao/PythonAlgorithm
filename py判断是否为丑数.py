@@ -38,3 +38,6 @@ if __name__ == "__main__":
     num = 6
     print(s.isUgly(num))
 
+
+    
+

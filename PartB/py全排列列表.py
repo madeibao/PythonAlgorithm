@@ -17,7 +17,6 @@ class Solution(object):
         _backtrack()
         return res
 
-
 if __name__ == "__main__":
 	s =Solution()
 	list2 =[1,2,3]

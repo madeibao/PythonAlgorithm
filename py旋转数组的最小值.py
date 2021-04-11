@@ -12,7 +12,6 @@
 @Desc    :   旋转数组的最小值。
 """
 
-
 class Solution(object):
     def spiralOrder(self,nums):
         
@@ -34,6 +33,7 @@ if __name__ == "__main__":
     nums = [3,4,5,6,7,7,1,2]
     print(s.spiralOrder(nums))
     
+
 
 
 

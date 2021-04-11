@@ -7,9 +7,10 @@ class ListNode(object):
 
 # 递归的解法来实现链表的逆置
 
-
 class Solution(object):
 	def reverse(self,head):
+
+		# 递归必须有结束的条件
 		if not head or not head.next:
 			return head
 

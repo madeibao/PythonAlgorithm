@@ -5,7 +5,6 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
-
 class Solution(object):
     def symmetric(self, root):
         if not root:return True
@@ -18,8 +17,6 @@ class Solution(object):
 
             return left.val ==right.val and helper(left.left,right.right) and helper(left.right,right.left)
         return helper(root, root)
-
-
 
 if __name__ == "__main__":
     s = Solution()

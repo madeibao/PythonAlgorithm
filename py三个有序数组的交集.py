@@ -15,6 +15,7 @@ class Solution(object):
         for i in arr3:
             val[i] += 1
         res = []
+
         for i,v in enumerate(val):
             if v == 3:res.append(i)
         return res
@@ -28,8 +29,6 @@ if __name__ == "__main__":
     arr2 = [1,2,5,7,9]
     arr3 = [1,3,4,5,8]
 
-
     res = s.arraysIntersection(arr1, arr2, arr3)
-
     print(res)
 

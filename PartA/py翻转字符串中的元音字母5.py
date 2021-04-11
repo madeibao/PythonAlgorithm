@@ -1,5 +1,7 @@
 
 
+
+
 class Solution(object):
 	def reverse(self,strs):
 		i,j = 0,len(strs)-1	
@@ -8,7 +10,6 @@ class Solution(object):
 		while True:
 			if i>j:
 				break
-
 			while list2[i] not in "aeiouAEIOU" and i<j:
 				i+=1
 

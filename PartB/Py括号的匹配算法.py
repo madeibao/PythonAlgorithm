@@ -51,6 +51,8 @@ class Solution {
         return true;
     }
 }
+
+
 class Solution:
     def checkValidString(self, s: str) -> bool:
         lNum = 0 #//从左往右扫描，若是'(' 则加1 若是')'则减1

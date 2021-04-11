@@ -1,6 +1,5 @@
 
 
-
 class Solution(object):
 	def palindrome(self,strs):
 

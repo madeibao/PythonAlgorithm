@@ -6,6 +6,7 @@ class TreeNode():
         self.right = None
         self.val = x
 
+from typing import List
 
 class Solution:
     def rightSideView(self, root: TreeNode) -> List[int]:

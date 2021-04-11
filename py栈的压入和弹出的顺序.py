@@ -1,5 +1,6 @@
 
 
+#/////////////////  ///////////////////////////////////////////////////////////////////
 # 判断是否为合理的压入和弹出的顺序。
 
 class Solution(object):
@@ -13,7 +14,6 @@ class Solution(object):
                 stack.pop()
                 j+=1
         return stack==[] 
-
 
 if  __name__ == "__main__": 
     s = Solution()
