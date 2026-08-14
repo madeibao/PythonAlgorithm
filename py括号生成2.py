@@ -18,7 +18,11 @@ class Solution(object):
 			helper(str2+"(",left-1, right)
 			helper(str2+")",left, right-1)
 		helper("", n,n)
+
+		
 		return self.res
+
+
 
 if __name__ == "__main__":
 	s= Solution()

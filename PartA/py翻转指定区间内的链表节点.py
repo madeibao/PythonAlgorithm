@@ -13,7 +13,7 @@ class Solution:
         p = dummyHead.next
 
         step =0
-        while step<m-1:
+        while(step<m-1):
             g= g.next
             p= p.next
             step+=1
