@@ -1,6 +1,7 @@
+from typing import List
 
 class Solution(object):
-    def arraysIntersection(self, arr1, arr2, arr3):
+    def arraysIntersection(self, arr1:List, arr2:List, arr3:List) -> List :
         """
         :type arr1: List[int]
         :type arr2: List[int]
@@ -22,13 +23,10 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-
     s= Solution()
-
-    arr1 = [1,2,3,4,5]
-    arr2 = [1,2,5,7,9]
-    arr3 = [1,3,4,5,8]
-
-    res = s.arraysIntersection(arr1, arr2, arr3)
+    arra = [1,2,3,4,5]
+    arrayB = [1,2,5,7,9]
+    arrc = [1,3,4,5,8]
+    res = s.arraysIntersection(arra, arrayB, arrc)
     print(res)
 
