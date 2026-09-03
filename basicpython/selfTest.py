@@ -2,3 +2,29 @@
 # @Author: Mayuan
 # @Time: 2026/9/3/星期四 10:32
 # @File: selfTest
+
+
+# !/usr/bin/python3
+
+# 类定义
+class people:
+    # 定义基本属性
+    name = ''
+    age = 0
+    # 定义私有属性,私有属性在类外部无法直接进行访问
+    __weight = 0
+
+    # 定义构造方法
+    def __init__(self, n, a, w):
+        self.name = n
+        self.age = a
+        self.__weight = w
+
+    def speak(self):
+        print("%s 说: 我 %d 岁。" % (self.name, self.age))
+
+
+if __name__ == '__main__':
+        # 实例化类
+    p = people('runoob', 10, 30)
+    p.speak()
