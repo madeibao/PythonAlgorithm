@@ -38,4 +38,4 @@ print(mileage)
 
 n = 42
 for _ in range(n):
-do_something()
+    do_something()
