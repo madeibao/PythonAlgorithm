@@ -17,14 +17,13 @@ class Solution(object):
 			stack.append(head.val)
 			head = head.next
 
-		res = []
+		result = []
 		while stack:
-			res.append(stack.pop())
-		return res 
+			result.append(stack.pop())
+		return result
 
 
 if __name__ == '__main__':
-
 	head = ListNode(1)
 	h2 = ListNode(2) 
 	h3 = ListNode(3)
