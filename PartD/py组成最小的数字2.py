@@ -5,10 +5,11 @@
 
 
 from functools import cmp_to_key
+from typing import List
 
 
 class Solution(object):
-    def minNum(self, nums):
+    def minNum(self, nums: List[int]) -> int:
         if len(nums) == 0:
             return ""
 
@@ -20,7 +21,3 @@ if __name__ == "__main__":
     s = Solution()
     nums = [10, 2]
     print(s.minNum(nums))
-
-
-
-

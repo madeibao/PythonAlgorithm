@@ -1,6 +1,3 @@
-
-
-
 # !/usr/bin/python
 # -*- coding: utf-8 -*-
 """
@@ -12,28 +9,25 @@
 @License :   (C)Copyright 2020-2021
 @Desc    :   None
 """
+from typing import List
+
 
 # 动态规划算法的
 
 class Solution(object):
-    def maxProfit(self,nums):
+    def maxProfit(self, nums:List[int]):
 
-        if len(nums)==0:return 0
-        maxProfit = float("-inf")
+        if len(nums) == 0:
+            return 0
+        profit = float("-inf")
         temp = nums[0]
         for i in range(1, len(nums)):
             temp = min(temp, nums[i])
-            maxProfit = max(maxProfit, nums[i]-temp)
-        return maxProfit
+            profit = max(profit, nums[i] - temp)
+        return profit
 
 
 if __name__ == "__main__":
     s = Solution()
-    nums = [7,1,5,3,6,4]
+    nums = [7, 1, 5, 3, 6, 4]
     print(s.maxProfit(nums))
-
-
-
-
-
-
