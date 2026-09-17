@@ -13,7 +13,7 @@ class Solution(object):
                 stack.pop()
             else:
                 return False
-        return not stack
+        return stack is None or len(stack) == 0
 
 
 if __name__ == '__main__':
