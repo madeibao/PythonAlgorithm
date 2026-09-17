@@ -14,7 +14,7 @@ class Solution(object):
         """
 
         def helper(node, mina, maxa):
-            if node==None:
+            if node is None:
                 return True
             if node.val<=mina or node.val>=maxa:
                 return False
