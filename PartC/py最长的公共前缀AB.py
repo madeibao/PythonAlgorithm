@@ -1,5 +1,4 @@
-
-.# !/usr/bin/python
+# !/usr/bin/python
 # -*- coding: utf-8 -*-
 """
 @File    :   py最长的公共前缀AB.py
@@ -10,25 +9,21 @@
 @License :   (C)Copyright 2020-2021
 @Desc    :   None
 """
+from typing import List
 
 
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
-
         res = ""
         for i in zip(*strs):
-            if len(set(i))==1:
-                res+=i[0]
+            if len(set(i)) == 1:
+                res += i[0]
             else:
                 break
-                
-        return res 
+        return res
 
 
 if __name__ == "__main__":
-	s = Solution()
-	strs = ["flower", "flyght", "flyment"]
-	print(s.longestPrefix(strs))
-
-
-
+    s = Solution()
+    strs = ["flower", "flyght", "flyment"]
+    print(s.longestCommonPrefix(strs))
