@@ -9,7 +9,7 @@ from typing import List
 
 
 class Solution(object):
-    def minNum(self, nums: List[int]) -> int:
+    def minNum(self, nums: List[int]) -> str:
         if len(nums) == 0:
             return ""
 
