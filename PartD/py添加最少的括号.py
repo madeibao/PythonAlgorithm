@@ -1,12 +1,7 @@
-
-
-
 class Solution:
-    def minAddToMakeValid(self, S: str) -> int:
-
+    def minAddToMakeValid(self, bracket: str) -> int:
         stack = []
-
-        for i in S:
+        for i in bracket:
             if stack:
                 if stack[-1] == '(' and i == ')':
                     stack.pop()
@@ -14,12 +9,10 @@ class Solution:
                     stack.append(i)
             else:
                 stack.append(i)
-        return (len(stack))
+        return len(stack)
 
 
 if __name__ == '__main__':
-	s =  Solution()
-	str2 =")()"
-	print(s.isValid(str2))
-
-	
+    s = Solution()
+    str2 = ")()"
+    print(s.minAddToMakeValid(str2))
