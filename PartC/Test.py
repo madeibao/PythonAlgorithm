@@ -12,8 +12,16 @@
 @Desc    :   None
 """
 
-if __name__ == "__main__": 
-    print("hello world")
+if __name__ == "__main__":
+    a = 'abcdefghijklmn'
+    L = list(a)
+    L.reverse()
+
+    for letter in L:
+        print(letter, end='')
+
+    print('\n')
+    print(a[::-1])
 
 
 
