@@ -1,5 +1,5 @@
 
-class TreeNode():
+class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
@@ -16,7 +16,7 @@ class Solution(object):
 
         res = 0
         left = 0
-        if root.left != None and root.left.left == None and root.left.right==None:
+        if root.left is not None and root.left.left is None and root.left.right is None:
             res = root.left.val
         else:
             left = self.sumleft(root.left)
