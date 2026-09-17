@@ -1,3 +1,4 @@
+from typing import Counter
 
 
 def exchange(str3):
@@ -6,7 +7,7 @@ def exchange(str3):
     list3 = list(str3)
 
     for i in list3:
-        if i in list2 and map2.get(i)>1:
+        if i in list2 and map2.get(i) > 1:
             list3.remove(i)
         else:
             continue
@@ -17,19 +18,16 @@ def normallize(name):
     return name.capitalize()
 
 
-list3 = input().lower().split(" ")
+if __name__ == '__main__':
 
-res = []
-for i in list3:
-    res.append(exchange(i))
+    list3 = input().lower().split(" ")
 
-res2 = []
-for i in res:
-    res2.append(normallize(i))
+    res = []
+    for i in list3:
+        res.append(exchange(i))
 
-print(" ".join(res2))
+    res2 = []
+    for i in res:
+        res2.append(normallize(i))
 
-
-
-
-
+    print(" ".join(res2))
