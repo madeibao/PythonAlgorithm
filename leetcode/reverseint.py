@@ -2,8 +2,6 @@
 # @Author: Mayuan
 # @Time: 2026/9/18/星期五 10:29
 # @File: reverseint
-import signal
-
 
 class Solution:
     def reverse(self, x: int) -> int:
