@@ -7,7 +7,6 @@
 class Solution:
     def generateParenthesis(self, n: int) -> list[str]:
         res = []
-
         def backtrack(s, left, right):
             if len(s) == 2 * n:
                 res.append(s)
