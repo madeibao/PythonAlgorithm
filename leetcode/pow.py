@@ -16,7 +16,6 @@ class Solution:
             return half * half
         else:
             return half * half * x
-        return 1.0
 
 if __name__ == '__main__':
     x = 2.0
