@@ -13,3 +13,4 @@ class Solution:
 
 if __name__ == '__main__':
     sol = Solution()
+    print(sol.countSegments("hello world, python language, java language, C++ language"))
