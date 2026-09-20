@@ -3,12 +3,8 @@
 # @Time: 2026/9/20/星期日 17:44
 # @File: completetree
 
-
-from collections import deque
-
 from collections import deque
 from typing import Optional
-
 from TreeNode import TreeNode
 
 
@@ -34,6 +30,7 @@ class Solution:
                 queue.append(node.right)
 
         return True
+
 
 if __name__ == '__main__':
     root = TreeNode(1)
