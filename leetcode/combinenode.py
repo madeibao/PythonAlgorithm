@@ -6,7 +6,7 @@ class ListNode:
 		self.next = next
 
 class Solution:
-	def combine(self, nodea:ListNode, nodeb:ListNode):
+	def combine(self, nodea:ListNode, nodeb:ListNode) -> ListNode:
 		if nodea is None:
 			return nodeb
 		if nodeb is None:
