@@ -15,6 +15,8 @@ class Solution:
                 else:
                     dict[a + b] = 1
 
+        print(dict)
+
         count = 0
         for c in nums3:
             for d in nums4:
