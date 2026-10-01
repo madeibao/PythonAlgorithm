@@ -1,6 +1,5 @@
 # 判断是否为对称的二叉树。
 
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -15,7 +14,6 @@ def valid(root):
         if not left or not right:
             return False
         return left.val == right.val and helper(left.left, right.right) and helper(left.right, right.left)
-
     return helper(root, root)
 
 

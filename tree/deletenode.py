@@ -5,6 +5,7 @@
 
 from TreeNode import TreeNode
 from typing import Optional
+from TreeNode import traverse
 
 class Solution:
     def removeLeafNodes(self, root: Optional[TreeNode], target: int) -> TreeNode | None:
@@ -42,4 +43,4 @@ if __name__ == "__main__":
     target = 3
 
     res = Solution().removeLeafNodes(root, target)
-    Solution().print_tree(res)
+    print(traverse(res))
