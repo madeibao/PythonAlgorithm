@@ -8,7 +8,6 @@ class Solution:
 
         if not s:return None
         list2 = list(s)
-
         res = []
         def helper(start):
             if start==len(list2):
@@ -19,7 +18,6 @@ class Solution:
                 list2[i],list2[start] = list2[start],list2[i]
         helper(0)
         return res
-
 
 if __name__ == '__main__':  
     s = Solution()
