@@ -25,7 +25,6 @@ class Solution:
             return False
             
         # 第三步：再次爬坡
-        q = i
         while i + 1 < n and nums[i] < nums[i+1]:
             i += 1
         # 检查
