@@ -1,21 +1,21 @@
-
 class ListNode(object):
-	def __init__(self,x):
-		self.val = x
-		self.next = None
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
 
 class Solution(object):
-	def reverse(self, head):
-		if head is None:
-			return None
+    def reverse(self, head):
+        if head is None:
+            return None
 
-		pre = None
-		while head:
-			temp = head.next
-			head.next = pre
-			pre = head
-			head = temp
-		return pre
+        pre = None
+        while head:
+            temp = head.next
+            head.next = pre
+            pre = head
+            head = temp
+        return pre
 
 
 if __name__ == '__main__':
@@ -42,10 +42,3 @@ if __name__ == '__main__':
     while node:
         print(node.val)
         node = node.next
-
-
-
-
-
-
-
