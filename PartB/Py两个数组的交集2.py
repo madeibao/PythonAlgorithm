@@ -1,4 +1,4 @@
-
+from typing import List
 
 # # 求两个数组的交集，
 # 给定两个数组，编写一个函数来计算它们的交集。
@@ -16,10 +16,10 @@
 # 输出结果中每个元素出现的次数，应与元素在两个数组中出现的次数一致。
 # 我们可以不考虑输出结果的顺序。
 
-#================================================================
+# ================================================================
 
 class Solution(object):
-    def intersect(self, nums1, nums2):
+    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
         """
         :type nums1: List[int]
         :type nums2: List[int]
@@ -28,14 +28,12 @@ class Solution(object):
         inter = set(nums1) & set(nums2)
         l = []
         for i in inter:
-            l += [i] * min(nums1.count(i), nums2.count(i))  
+            l += [i] * min(nums1.count(i), nums2.count(i))
         return l
 
 
 if __name__ == "__main__":
-    
-    nums1 = [1,2,2,1]
-    nums2 = [2,2]
+    nums1 = [1, 2, 2, 1]
+    nums2 = [2, 2]
     s = Solution()
     print(s.intersect(nums1, nums2))
-
