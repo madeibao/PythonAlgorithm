@@ -1,9 +1,5 @@
 
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
-
+from ListNode import ListNode
 
 class Solution:
     def reverseBetween(self, head: ListNode | None, left: int, right: int) -> ListNode | None:
@@ -18,7 +14,6 @@ class Solution:
             prev = prev.next
 
         current = prev.next
-        next_node = None
 
         for _ in range(right - left):
             next_node = current.next
@@ -58,9 +53,7 @@ if __name__ == "__main__":
     # 打印反转后的链表
     current = reversed_head
     while current:
-        print(current.val)
+        print(current.val, end=" ")
         current = current.next
 
-    print("反转后的链表打印完毕")
-
-
+    print("\n反转后的链表打印完毕")
