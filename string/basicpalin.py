@@ -13,7 +13,6 @@ class Solution:
         bits = "".join(f'{ord(c):08b}' for c in s)
         return bits == bits[::-1]
 
-
 if __name__ == "__main__":
     s = "racecar"
     solution = Solution()
