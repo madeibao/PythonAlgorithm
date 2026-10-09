@@ -1,4 +1,3 @@
-from lib2to3 import main
 
 list = [1,2,3,4,5,4,3,7,2,8,1]
 
