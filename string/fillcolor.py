@@ -10,7 +10,7 @@ class Solution:
         image[sr][sc] = newColor
         for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
             x, y = sr + dx, sc + dy
-            if x >= 0 and x < len(image) and y >= 0 and y < len(image[0]) and image[x][y] == color:
+            if 0 <= x < len(image) and 0 <= y < len(image[0]) and image[x][y] == color:
                 self.floodFill(image, x, y, newColor)
         return image
 
