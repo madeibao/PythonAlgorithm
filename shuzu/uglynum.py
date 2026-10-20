@@ -54,18 +54,3 @@ if __name__ == "__main__":
     c = 20
     n = 10
     print(Solution().nthUglyNumber(n, a, b, c))
-
-        def lcm(x: int, y: int) -> int:
-            """
-            计算两个整数的最小公倍数。
-
-            Args:
-                x: 第一个整数
-                y: 第二个整数
-
-            Returns:
-                两个整数的最小公倍数
-            """
-            from math import gcd
-            return x * y // gcd(x, y)
-    
