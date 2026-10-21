@@ -30,3 +30,5 @@ if __name__ == "__main__":
     print(Solution().maxProduct(nums))
     print(Solution2().maxProduct(nums))
 
+
+# 代码求的是最大的乘积子数组，而不是连续子数组，所以不能用滑动窗口来做
