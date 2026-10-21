@@ -4,7 +4,7 @@ from TreeNode import TreeNode
 class Solution:
     def averageOfSubtree(self, root: TreeNode) -> int:
         ans = 0
-        def dfs(node):
+        def dfs(node: TreeNode) -> (int, int):
             if not node:
                 return 0, 0
             l_sum, l_count = dfs(node.left)
