@@ -19,7 +19,6 @@ class Solution:
             tail.next = ListNode(total % 10)
             tail = tail.next
 
-
             # 如果curr不为空，则移动到下一个节点
             if curr:
                 curr = curr.next
