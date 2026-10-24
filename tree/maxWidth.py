@@ -7,6 +7,7 @@ class Solution:
     def widthOfBinaryTree(self, root: TreeNode | None) -> int:
         res = []
         q = deque([(root, 1)])
+        # 默认层级宽度为1，因为根节点占据一个位置
         maxWidth = 1
         while q:
             levelSize = len(q)
@@ -18,6 +19,7 @@ class Solution:
                     q.append((node.left, val * 2))
                 if node.right:
                     q.append((node.right, val * 2 + 1))
+            # 层级宽度为当前层级的最后一个节点和第一个节点的位置差值加1
             maxWidth = max(maxWidth, ans[-1] - ans[0] + 1)
         return maxWidth
 
