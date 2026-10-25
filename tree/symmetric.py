@@ -9,6 +9,7 @@ class TreeNode(object):
 
 def valid(root):
     def helper(left, right):
+        # 必须首先判断两边是否都为空，否则会报错
         if not left and not right:
             return True
         if not left or not right:
