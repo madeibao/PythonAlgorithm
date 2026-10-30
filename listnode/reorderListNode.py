@@ -29,12 +29,15 @@ class Solution:
             l2 = l2_tmp
     
     def middleNode(self, head: ListNode) -> ListNode:
+        # 快慢指针：ha 每次走一步，hb 每次走两步
         ha = head
         hb = head
 
+        # 当 hb 及其下一节点都非空时继续推进
         while hb and hb.next:
-            ha = ha.next
-            hb = hb.next.next
+            ha = ha.next          # 慢指针走一步
+            hb = hb.next.next     # 快指针走两步
+        # hb 到达末尾时，ha 恰好指向中间节点
         return ha
 
     def reverseList(self, head: ListNode) -> ListNode:
