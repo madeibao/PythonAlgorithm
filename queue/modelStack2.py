@@ -1,7 +1,5 @@
-
-
-
-class MyStack():
+import collections
+class MyStack(object):
     def __init__(self):
         self.queue = collections.deque()
     
