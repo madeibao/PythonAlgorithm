@@ -1,3 +1,6 @@
+
+from typing import List
+
 class Solution:
     def restoreIpAddresses(self, s: str) -> List[str]:
         ans = []
@@ -9,7 +12,7 @@ class Solution:
                             t = s[:a]
                             u = s[a : a + b]
                             v = s[a + b : a + b + c]
-                            w = s[a + b + c :]
+                            w = s[a + b + c :a + b + c + d]
                             if (
                                 self.validIp(t)
                                 and self.validIp(u)
@@ -24,3 +27,9 @@ class Solution:
             return False
         num = int(t)
         return num <= 255 and num >= 0
+
+if __name__ == "__main__":
+    s = "25525511135"
+    solution = Solution()
+    print(solution.restoreIpAddresses(s))
+    # Output: ["255.255.11.135","255.255.111.35"]
