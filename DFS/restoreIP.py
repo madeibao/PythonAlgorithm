@@ -24,7 +24,7 @@ class Solution:
     def validIP(self, segment: str) -> bool:
         if len(segment) > 1 and segment[0] == '0':
             return False
-        if int(segment) > 255:
+        if int(segment) > 255 or int(segment) < 0:
             return False
         return True
 
