@@ -29,6 +29,7 @@ class Solution:
         ans = []
         def dfs(s, path):
             # 已切出 4 段：剩余字符串为空则是一个合法结果，否则剪枝返回
+            # 这里不能用len(path)==4 and not s: 这种写法，因为如果len(path)==4但s不为空，仍然需要返回而不是继续切分
             if len(path) == 4:
                 if not s:
                     ans.append(".".join(path))
