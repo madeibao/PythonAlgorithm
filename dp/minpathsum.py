@@ -18,16 +18,15 @@ class Solution:
                 # 起点无需累加
                 if i == j == 0: continue
                 # 第一行只能从左侧过来
-                elif i == 0:  grid[i][j] = grid[i][j - 1] + grid[i][j]
+                elif i == 0:  grid[i][j] += grid[i][j - 1];
                 # 第一列只能从上方过来
-                elif j == 0:  grid[i][j] = grid[i - 1][j] + grid[i][j]
+                elif j == 0:  grid[i][j] += grid[i - 1][j];
                 # 其余位置取上方与左侧的较小值
-                else: grid[i][j] = min(grid[i - 1][j], grid[i][j - 1]) + grid[i][j]
+                else: grid[i][j] += min(grid[i - 1][j], grid[i][j - 1]);
         # 右下角累计结果即为最小路径和
         return grid[-1][-1]
 
 
 if __name__ == "__main__":
     nums = [[1, 3, 1], [1, 5, 1], [4, 2, 1]]
-
     print(Solution().minPathSum(nums))
