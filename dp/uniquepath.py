@@ -10,7 +10,6 @@ class Solution:
         for i in range(1, m):
             for j in range(1, n):
                 dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
-        
         return dp[-1][-1]
 
 
@@ -25,6 +24,14 @@ class Solution2:
         return dp[-1]
 
 
+# 第三种解法，空间复杂度更低
+# 用数学的组合公式求解
+import math
+class Solution3(object):
+    def uniquePaths(self, m: int, n: int) -> int:
+        return math.comb(m + n - 2, m - 1)
+
+
 if __name__ == "__main__":
     m = 3
     n = 7
@@ -32,5 +39,3 @@ if __name__ == "__main__":
 
     print(solution.uniquePaths(m, n))
     # Output: 28
-
-    
