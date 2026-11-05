@@ -26,6 +26,13 @@ class Solution2:
 
 # 第三种解法，空间复杂度更低
 # 用数学的组合公式求解
+# 由于是从左上角走到右下角，总共需要向右走 m - 1 步，向下走 n - 1 步
+# 所以总共的路径数就是 C(m + n - 2, m - 1)
+# 总体上，用C(m + n - 2, m - 1) 和 math.comb(m + n - 2, n - 1) 是一样的
+
+# 组合公式：C(n, k) = n! / (k!(n-k)!)
+# C(n, k) = C(n, n-k) = n! / (k!(n-k)!), 组合公式是对称的，所以只需要计算其中一个即可
+
 import math
 class Solution3(object):
     def uniquePaths(self, m: int, n: int) -> int:
