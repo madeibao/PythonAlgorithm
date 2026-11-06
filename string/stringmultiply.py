@@ -5,11 +5,12 @@ class Solution:
         lenb = len(num2) - 1
 
         res = [0] * (lena + lenb + 2)
-
         for i in range(lena, -1, -1):
             for j in range(lenb, -1, -1):
-                a = ord(num1[i]) - ord('0')
-                b = ord(num2[j]) - ord('0')
+                # a = ord(num1[i]) - ord('0')
+                # b = ord(num2[j]) - ord('0')
+                a  = int(num1[i])
+                b  = int(num2[j])
                 mul = a * b
                 sum_ = mul + res[i + j + 1]
                 res[i + j] += sum_ // 10
