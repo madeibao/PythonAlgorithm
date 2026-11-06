@@ -7,6 +7,9 @@ from collections import deque
 
 class Solution:
     def orangesRotting(self, grid: List[List[int]]) -> int:
+        if not grid or not grid[0]:
+            return 0
+
         rows, cols = len(grid), len(grid[0])
         queue = deque()
         fresh_count = 0
@@ -26,7 +29,10 @@ class Solution:
         directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         minutes_passed = 0
 
-        # BFS to rot adjacent fresh oranges
+        if fresh_count == 0:
+            return 0  # 没有新鲜橘子，直接返回0
+
+        # 按层 BFS，每层代表一分钟
         while queue and fresh_count > 0:
             minutes_passed += 1
             for _ in range(len(queue)):
@@ -43,6 +49,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    grid = [[2,1,1],[1,1,0],[0,1,1]]
+    grid = [[2, 1, 1], [1, 1, 0], [0, 1, 1]]
     solution = Solution()
     print(solution.orangesRotting(grid))
