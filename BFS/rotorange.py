@@ -19,6 +19,9 @@ class Solution:
                 elif grid[r][c] == 1:
                     fresh_count += 1
 
+        if fresh_count == 0:
+            return 0  # No fresh oranges to rot, so return 0 immediately.
+
         # Directions for adjacent cells (up, down, left, right)
         directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         minutes_passed = 0
